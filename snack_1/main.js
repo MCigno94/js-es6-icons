@@ -59,11 +59,14 @@ const listCars = [{
     }
 ];
 
+//nel primo array solo le auto a benzina
 const carsBenzine = listCars.filter(car => car.alimentazione === 'Benzina');
 console.log(carsBenzine);
 
+//nel secondo solo le auto a diesel
 const carsDiesel = listCars.filter(car => car.alimentazione === 'Diesel');
 console.log(carsDiesel);
 
+//nel terzo il resto delle auto
 const remainingCars = listCars.filter(car => car.alimentazione !== 'Benzina' && car.alimentazione !== 'Diesel');
 console.log(remainingCars);
